@@ -1,12 +1,13 @@
 #!/usr/bin/env python
 """
-调包+自定义函数(wdi_get,draw_df,hp_cycle,hp_draw,hp_trend,merge_df,myggplot,pipex,reg)！
+调包+自定义函数
+from pyFun import import_data, export_data, wdi_get,draw_df,hp_cycle,hp_draw,hp_trend,merge_df,myggplot, reg
 
 """
 import sys
 sys.path.append("/Users/mac/Library/CloudStorage/OneDrive-个人/Research/05-Programming/01-Python")
-# data_path = "/Users/mac/Github/gitdata"
-data_path = "/Users/mac/Library/CloudStorage/OneDrive-个人/Research/02-Analysis/00-data/"
+data_path = "/Users/mac/Github/fisheryounggod/gitdata"
+
 import pandas as pd
 import numpy as np
 from datetime import datetime
@@ -35,13 +36,13 @@ print("调用R成功,jupyter中运行{}并输入%%R(快捷键：`Command+Alt+Con
 '''
 # %load_ext rpy2.ipython
 
-import stata_setup
-# stata_setup.config(r"C:\Program Files\Stata18", "mp", splash=False) # Windows 调用Stata
-stata_setup.config(r"/Applications/Stata", "mp", splash=False) # Mac 调用Stata
-from pystata import stata
-from glob import glob
-from sfi import Data
-print("调用Stata成功，输入%%stata（快捷键：`Command+Alt+Contrl+S`）即可使用Stata！")
+# import stata_setup
+# # stata_setup.config(r"C:\Program Files\Stata18", "mp", splash=False) # Windows 调用Stata
+# stata_setup.config(r"/Applications/Stata", "mp", splash=False) # Mac 调用Stata
+# from pystata import stata
+# from glob import glob
+# from sfi import Data
+# print("调用Stata成功，输入%%stata（快捷键：`Command+Alt+Contrl+S`）即可使用Stata！")
 
 
 # import matlab
@@ -56,6 +57,22 @@ print("调用Stata成功，输入%%stata（快捷键：`Command+Alt+Contrl+S`）
 # import sys
 # sys.path.append("/Users/mac")
 # from myPyFun import hp_cycle # 导入自定义HP函数
+
+# pandas 变量重命名
+def rename2(df,oldname, newname):
+    df = df.rename(columns={oldname: newname})
+    return df
+def renamere(df,oldname, newname):
+    """正则重命名
+    Args:
+        df (dataframe): df
+        newname (dataframe): 新名称
+        oldname (dataframe): 旧名称
+    Returns:
+        dataframe: 返回修改名称后的DataFrame
+    """
+    df = df.rename(columns=lambda x: re.sub(oldname, newname, x)) 
+    return df
 
 def iso23(iso2):
     """
@@ -315,7 +332,7 @@ class CustomAccessor:
         import numpy as np
         with pd.ExcelWriter(data_path + name+".xlsx") as xlsx:
             self._obj.to_excel(xlsx, sheet_name=sheet, index=False)
-        print("数据成功导出到00-data文件夹{0}/{1}表格!".format(name,sheet))
+        print("数据成功导出!".format(name,sheet))
 
 
 # 添加Pandas自定义select方法
