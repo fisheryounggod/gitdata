@@ -1,0 +1,28 @@
+%  7 Nov 2021 10:43:12
+\documentclass{article}
+\usepackage{booktabs}
+\begin{document}
+
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{1}{c}}
+\toprule
+            &\multicolumn{1}{c}{A}\\\cmidrule(lr){2-2}
+            &\multicolumn{1}{c}{(1)}\\
+            &\multicolumn{1}{c}{weight}\\
+\midrule
+mpg         &      -108.4\sym{***}\\
+            &    (-11.60)         \\
+\addlinespace
+\_cons      &      5328.8\sym{***}\\
+            &     (25.85)         \\
+\midrule
+\(N\)       &          74         \\
+\bottomrule
+\multicolumn{2}{l}{\footnotesize \textit{t} statistics in parentheses}\\
+\multicolumn{2}{l}{\footnotesize \sym{*} \(p<0.1\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{tabular}
+}
+
+\end{document}
+
