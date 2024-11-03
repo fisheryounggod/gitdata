@@ -8,3 +8,4 @@
 - china.debt
 - gdp
 - ca.of.gdp
+- csv/bop_of_gdp.csv
