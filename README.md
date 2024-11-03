@@ -26,3 +26,5 @@
 - iso_code
 - china_gdp_year
 - gpr_data_raw
+- economic_policy_uncerntainty(EPU)
+- vix
