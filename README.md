@@ -7,4 +7,8 @@
 - china.bop
 - china.debt
 - gdp
-- ca.of.gdp
+- ca_of_gdp
+- ex_rate
+- fw_flow
+- kp_flow
+- oecd_flow
