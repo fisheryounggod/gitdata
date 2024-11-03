@@ -2,6 +2,9 @@
 
 - gpr
 - penn
-- tri index
+- tri.index
 - wdi
-- bop_china
+- china.bop
+- china.debt
+- gdp
+- ca.of.gdp
