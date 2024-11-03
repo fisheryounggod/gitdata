@@ -30,3 +30,4 @@
 - vix
 - house_price_bis
 - ka_open
+- quinn_open
