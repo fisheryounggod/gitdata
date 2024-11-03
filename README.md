@@ -32,3 +32,4 @@
 - ka_open
 - quinn_open
 - china_EPU
+- china_province_EPU
