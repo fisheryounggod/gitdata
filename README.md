@@ -15,3 +15,4 @@
 - csv/bop_of_gdp.csv
 - trade_of_gdp
 - bop_of_gdp
+- bop_of_gdp_qtr
