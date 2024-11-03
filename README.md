@@ -29,3 +29,4 @@
 - economic_policy_uncerntainty(EPU)
 - vix
 - house_price_bis
+- ka_open
