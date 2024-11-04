@@ -35,3 +35,4 @@
 - china_province_EPU
 - china_EPU_sub_index
 - china_gdp_prinvince
+- rer_bis
