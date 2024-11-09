@@ -52,3 +52,4 @@
 - customs_trade_month
 - customs_trade_month
 - trade_data_compare
+- ex_rate
