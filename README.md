@@ -51,3 +51,4 @@
 - china_flow_bop_compare
 - customs_trade_month
 - customs_trade_month
+- trade_data_compare
