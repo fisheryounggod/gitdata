@@ -56,3 +56,4 @@
 - ex_rate
 - ex_rate_year
 - ex_rate_qtr
+- trade_data_compare
