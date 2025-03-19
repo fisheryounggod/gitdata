@@ -58,3 +58,4 @@
 - ex_rate_qtr
 - trade_data_compare
 - chinese_expectancy
+- csv/gpr_china.csv
