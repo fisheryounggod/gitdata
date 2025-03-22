@@ -60,3 +60,6 @@
 - chinese_expectancy
 - csv/gpr_china.csv
 - csv/cn_us_jp_cab.csv
+- csv/cn_us_jp_kfa.csv
+- csv/cn_us_jp_cab.csv
+- csv/cn_us_jp_kfa.csv
